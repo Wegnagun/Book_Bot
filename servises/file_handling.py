@@ -37,13 +37,6 @@ def _get_part_text(text: str, start: int, size: int) -> tuple[str, int]:
     return result, len(result)
 
 
-# text = 'Раз. Два. Три. Четыре. Пять. Прием!'
-# print(*_get_part_text(text, 5, 9), sep='\n')
-text = 'Да? Вы точно уверены? Может быть, вам это показалось?.. Ну, хорошо, приходите завтра, тогда и посмотрим, что можно сделать. И никаких возражений! Завтра, значит, завтра!'
-print(*_get_part_text(text, 0, 54), sep='\n')
-# Да? Вы точно уверены? Может быть,
-# 33
-
 def prepare_book(path: str) -> None:
     pass
 
