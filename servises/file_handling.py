@@ -4,7 +4,6 @@ import sys
 
 BOOK_PATH = 'book/book.txt'
 PAGE_SIZE = 1050
-PUNCTUATION = [',', '.', '!', ':', ';', '?']
 
 book: dict[int, str] = {}
 
@@ -31,7 +30,7 @@ def _get_part_text(text: str, start: int, size: int) -> tuple[str, int]:
     """
     puncts_indexs = [
         i for i, ltr in enumerate(text[start:start+size])
-        if ltr in PUNCTUATION and i < size + 1
+        if ltr in string.punctuation and i < size + 1
     ]
     last_punct_index = _get_last_index(text, puncts_indexs, puncts_indexs[-1])
     result = text[start:start + last_punct_index + 1]
