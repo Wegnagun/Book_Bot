@@ -5,7 +5,7 @@ from lexicon.lexicon import LEXICON
 
 
 def create_pagination_keyboard(*buttons: str) -> InlineKeyboardMarkup:
-    """ Функция, генерирующая клавиатуру для страницы книгы. """
+    """ Функция, генерирующая клавиатуру для страницы книги. """
     kb_builder = InlineKeyboardBuilder()
     kb_builder.row(*[
         InlineKeyboardButton(
@@ -14,3 +14,4 @@ def create_pagination_keyboard(*buttons: str) -> InlineKeyboardMarkup:
         ) for button in buttons
     ])
     return kb_builder.as_markup()
+

@@ -23,6 +23,7 @@ LEXICON: dict[str, str] = {
 }
 
 LEXICON_COMMANDS: dict[str, str] = {
+    '/start': 'Запустить',
     '/beginning': 'В начало книги',
     '/continue': 'Продолжить чтение',
     '/bookmarks': 'Мои закладки',

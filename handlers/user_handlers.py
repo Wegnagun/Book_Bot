@@ -39,8 +39,8 @@ async def process_beginning_command(message: Message):
     await message.answer(
         text=text,
         reply_markup=create_pagination_keyboard(
-            'backward',
-            f'{users_db[user_id]["page"]}/{len(book)}'
+            f'{users_db[user_id]["page"]}/{len(book)}',
+            'forward'
         )
     )
 
